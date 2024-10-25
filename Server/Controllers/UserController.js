@@ -64,7 +64,7 @@ export const updateUser = async (req, res) => {
 
             const token = jwt.sign(
                 { email: user.email, id: user._id },
-                process.env.JWT_KEY
+                "hrjgdgdgnhtyrjtetdhrdjrytetje"
             );
 
             res.status(200).json({ user, token })

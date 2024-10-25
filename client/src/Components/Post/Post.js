@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Post.css';
-import Comment from '../../Img/comment.png';
-import Share from '../../Img/share.png';
 import Like from '../../Img/like.png';
 import Notlike from '../../Img/notlike.png';
 import { useSelector } from 'react-redux';
@@ -25,12 +23,11 @@ const Post = ({ data }) => {
   return (
     <div className='Post'>
 
-      <img src={data.image ? process.env.REACT_APP_PUBLIC_FOLDER + data.image : " "} alt="" />
+      <img src="defaultProfile.png" alt="" />
 
       <div className="postReact">
         <img src={liked ? Like : Notlike} alt="" style={{ cursor: "pointer" }} onClick={handleLike} />
-        <img src={Comment} alt="" />
-        <img src={Share} alt="" />
+        
       </div>
 
       <span style={{ color: "var(--gray)", fontSize: '14px' }}>{likes} likes</span>

@@ -12,7 +12,7 @@ export const TrendData = [
         shares: 70,
     },
     {
-        name: "Cristiano Ronaldo",
+        name: "Thala Dhoni",
         shares: 90,
     },
     {

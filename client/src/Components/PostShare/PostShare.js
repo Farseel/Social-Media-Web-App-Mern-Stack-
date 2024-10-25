@@ -68,32 +68,14 @@ const PostShare = () => {
 
     return (
         <div className="PostShare">
-            <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultProfile.png"} alt="" />
+            <img src="defaultProfile.png" alt="" />
 
             <div>
                 <input type="text" placeholder='Write a caption...' required ref={desc} />
 
                 <div className="postOptions">
 
-                    <div className="option" style={{ color: "var(--photo)" }}
-                        onClick={() => imageRef.current.click()}
-                    >
-                        <PhotoOutlinedIcon />
-                        Photo
-                    </div>
-
-                    <div className="option" style={{ color: "var(--video)" }}>
-                        <PlayCircleOutlineIcon />
-                        Video
-                    </div>
-                    <div className="option" style={{ color: "var(--location)" }}>
-                        <LocationOnOutlinedIcon />
-                        Location
-                    </div>
-                    <div className="option" style={{ color: "var(--shedule)" }}>
-                        <CalendarMonthOutlinedIcon />
-                        Shedule
-                    </div>
+                    
 
                     <button className='button ps-button' onClick={handleSubmit} disabled={loading}>
                         {loading ? "uploading..." : "Share"}

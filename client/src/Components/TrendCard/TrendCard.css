@@ -21,3 +21,10 @@
 .trend > span:nth-of-type(2){
     font-size: 15px;
 }
+
+.home-button{
+    width: 7rem;
+    height: 2rem;
+    margin-top: 6rem;
+    align-self: flex-end;
+}    

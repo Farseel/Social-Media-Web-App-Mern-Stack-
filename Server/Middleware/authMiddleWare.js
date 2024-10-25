@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const secret = process.env.JWT_KEY;
+const secret = "hrjgdgdgnhtyrjtetdhrdjrytetje";
 
 const authMiddleWare = async (req, res, next) => {
     try {

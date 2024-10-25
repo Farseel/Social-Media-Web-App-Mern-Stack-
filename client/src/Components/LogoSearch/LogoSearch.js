@@ -1,7 +1,6 @@
 import React from 'react'
 import './LogoSearch.css'
 import Logo from '../../Img/logo.png';
-import SearchIcon from '@mui/icons-material/Search';
 
 const LogoSearch = () => {
   return (
@@ -9,13 +8,7 @@ const LogoSearch = () => {
 
       <img src={Logo} alt="" />
 
-      <div className="Search">
-        <input type="text" placeholder='#Search' />
-
-        <div className="s-icon">
-          <SearchIcon />
-        </div>
-      </div>
+     
 
     </div>
   )
